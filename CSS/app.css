@@ -89,7 +89,7 @@ body {
 
 /* Header */
 header {
-  font-family: sans-serif;
+  font-family: 'merriweather', sans-serif;
   color: #fff;
   background-color: #333;
   padding: clamp(10px, 2vw, 20px) 0;
@@ -103,13 +103,21 @@ header h1 {
   /* Responsive */
 }
 
+header p {
+  font-style: italic;
+}
+
 /* Image Container */
 .image-container {
   width: 100%;
   overflow: hidden;
-  margin: clamp(20px, 4vw, 40px) 0; 
-  position: relative; 
+  margin: clamp(20px, 4vw, 40px) 0;
+  position: relative;
   height: clamp(200px, 30vw, 400px);
+  background-color: #f5ccc1;
+  /* Light peach color */
+  padding: clamp(10px, 2vw, 20px);
+  /* Add padding around the image */
 }
 
 .image-container img {
@@ -122,7 +130,8 @@ header h1 {
 }
 
 .image-container img {
-  border-width: 3px; /* Adjust border width for smaller screens */
+  border-width: 3px;
+  /* Adjust border width for smaller screens */
 }
 
 /* Main Section */
@@ -143,6 +152,10 @@ main {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   font-size: clamp(1rem, 2.5vw, 1.25rem);
   /* Responsive */
+}
+
+.author p:first-of-type {
+  font-style: italic;
 }
 
 /* Footer */
