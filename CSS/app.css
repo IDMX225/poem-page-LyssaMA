@@ -115,9 +115,7 @@ header p {
   position: relative;
   height: clamp(200px, 30vw, 400px);
   background-color: #f5ccc1;
-  /* Light peach color */
   padding: clamp(10px, 2vw, 20px);
-  /* Add padding around the image */
 }
 
 .image-container img {
@@ -131,7 +129,6 @@ header p {
 
 .image-container img {
   border-width: 3px;
-  /* Adjust border width for smaller screens */
 }
 
 /* Main Section */
