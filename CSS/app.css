@@ -76,7 +76,6 @@ select {
 /* End of Bell's Reset*/
 
 /* Begin My CSS */
-/* Add your custom styles here */
 
 /* Style */
 body {
@@ -107,6 +106,7 @@ main {
 
 /* Author Section */
 .author p {
+  font-family: serif;
   background: #fff;
   padding: 15px;
   border-radius: 5px;
