@@ -20,6 +20,6 @@ This is a simple web page that displays the poem "Remembered" by Paul Laurence D
 
 To view this project locally:
 
-1. **Clone the repository**:
+1. **Github**:
 
-   git clone <>
+   git clone <https://github.com/IDMX225/poem-page-LyssaMA>
