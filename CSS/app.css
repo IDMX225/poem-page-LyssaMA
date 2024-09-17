@@ -79,9 +79,10 @@ select {
 
 /* Style */
 body {
+  display: flex;
+  flex-direction: column;
   margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: serif;
   line-height: 1.5;
   color: #333;
   background-color: #f4f4f4;
@@ -89,52 +90,39 @@ body {
 
 /* Header */
 header {
-  font-family: 'merriweather', sans-serif;
+  font-family: 'Merriweather', sans-serif, cursive;
+  font-size: 44px;
   color: #fff;
   background-color: #333;
   padding: clamp(10px, 2vw, 20px) 0;
-  /* Responsive */
   text-align: center;
 }
 
 header h1 {
   margin: 0;
-  font-size: clamp(1.5rem, 4vw, 2rem);
-  /* Responsive */
+  font-size: clamp(1.75rem, 0.75rem + 5vw, 3rem);
+  font-family: 'Pacifico', cursive;
 }
 
 header p {
   font-style: italic;
+  font-family: 'merriweather', sans-serif, cursive;
 }
 
 /* Image Container */
-.image-container {
-  width: 100%;
-  overflow: hidden;
-  margin: clamp(20px, 4vw, 40px) 0;
-  position: relative;
-  height: clamp(200px, 30vw, 400px);
-  background-color: #f5ccc1;
-  padding: clamp(10px, 2vw, 20px);
+.image-container img {
+  border-radius: 5px;
+  border: 10px solid rgb(221, 178, 37);
+  border-radius: 5px;
 }
 
 .image-container img {
-  display: block;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border: 5px solid #333;
-  border-radius: 10px;
-}
-
-.image-container img {
-  border-width: 3px;
+  border-width: 5px;
 }
 
 /* Main Section */
 main {
-  padding: clamp(20px, 2vw, 15px);
-  /* Responsive */
+  padding: clamp(20px, 4vw, 15px);
   padding-bottom: clamp(20px, 5vw, 80px);
   background-color: hsl(0, 2%, 53%);
 }
@@ -143,16 +131,27 @@ main {
 .author p {
   font-family: serif;
   background: #d3f1f8;
-  padding: clamp(10px, 2vw, 15px);
-  /* Responsive */
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  font-size: clamp(1rem, 2.5vw, 1.25rem);
-  /* Responsive */
+  padding: clamp(15px, 4vw, 30px);
+  border-radius: 10px;
+  border: 5px solid rgb(221, 178, 37);
+  box-shadow: 0 0 10px rgba(41, 39, 39, 0.1);
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
 }
 
 .author p:first-of-type {
   font-style: italic;
+}
+
+/* Poem Section */
+.poem {
+  font-family: 'Pacifico', cursive;
+  background-color: #e0e0e0;
+  padding: clamp(15px, 4vw, 30px);
+  border-radius: 5px;
+  border: 5px solid rgb(221, 178, 37);
+  margin-top: clamp(20px, 2vw, 30px);
+  box-shadow: 0 0 10px rgba(41, 39, 39, 0.1);
+  font-size: clamp(1.5rem, 3.5vw, 2.5rem);
 }
 
 /* Footer */
@@ -161,7 +160,6 @@ footer {
   color: #fff;
   text-align: center;
   padding: clamp(10px, 2vw, 10px) 0;
-  /* Responsive */
   position: fixed;
   width: 100%;
   bottom: 0;
@@ -170,16 +168,18 @@ footer {
 /* Responsive design */
 @media (max-width: 600px) {
   .author p {
-    padding: clamp(8px, 2vw, 12px);
-    /* For smaller screens */
-    font-size: clamp(0.9rem, 3vw, 1.1rem);
-    /* For smaller screens */
+    padding: clamp(8px, 2vw, 20px);
+    font-size: clamp(1.25rem, 2vw, 1.75rem);
+  }
+
+  .poem {
+    padding: clamp(10px, 2vw, 20px);
+    font-size: clamp(1.25rem, 2vw, 1.75rem);
   }
 
   header,
   footer {
     padding: clamp(8px, 2vw, 15px) 0;
-    /* For smaller screens */
   }
 
 }
